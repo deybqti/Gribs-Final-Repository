@@ -1,0 +1,23 @@
+{
+  "name": "hotel-reservation-frontend",
+  "version": "1.0.0",
+  "description": "Hotel Reservation System Frontend - Customer and Admin Applications",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:customer\" \"npm run dev:admin\"",
+    "dev:customer": "npm --prefix customer run dev",
+    "dev:admin": "npm --prefix admin start",
+    "install:all": "npm install && npm --prefix customer install && npm --prefix admin install",
+    "build": "npm run build:customer && npm run build:admin",
+    "build:customer": "npm --prefix customer run build",
+    "build:admin": "npm --prefix admin run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.0.0"
+  },
+  "workspaces": [
+    "customer",
+    "admin"
+  ]
+}

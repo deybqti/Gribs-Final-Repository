@@ -1,0 +1,71 @@
+# =====================================================
+
+# =====================
+# Logs
+# =====================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =====================
+# Node.js dependencies
+# =====================
+node_modules/
+frontend/node_modules/
+frontend/admin/node_modules/
+frontend/customer/node_modules/
+server/node_modules/
+
+# =====================
+# Build output
+# =====================
+dist/
+dist-ssr/
+front end/build/
+server/build/
+server/dist/
+
+# =====================
+# Environment variables
+# =====================
+.env
+.env.local
+frontend/admin/.env
+frontend/customer/.env
+server/.env
+
+
+
+# =====================
+# Local config files
+# =====================
+*.local
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+# =====================
+# Editor directories
+# =====================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Misc
+# =====================
+coverage/
+*.tmp
+node_modules
